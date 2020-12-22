@@ -1,7 +1,7 @@
 
 var outputref = document.querySelector("#output");
 var btnref = document.querySelector("#result");
-var luckynum = Number(document.querySelector("luckynum"));
+var luckynum = document.querySelector("luckynum");
 
 btnref.addEventListener("click",clickEventHandler);
 function clickEventHandler(){
