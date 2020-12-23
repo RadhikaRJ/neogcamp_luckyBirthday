@@ -8,7 +8,7 @@ btnref.addEventListener("click", clickHandler);
 function clickHandler() {
     var inputDate = document.getElementById("dateip").value;
     var checkLuckyNum = isNaN(luckyNumref.value);
-    if (checkLuckyNum == true) {
+    if (checkLuckyNum == true||luckyNumref.value.length==0) {
         alert("You must enter a valid digit as your lucky number.");
     } else {
         var luckyNum = luckyNumref.value;
