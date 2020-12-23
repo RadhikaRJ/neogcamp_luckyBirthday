@@ -17,7 +17,13 @@ function clickHandler(){
 
     var sum=sumOfDigits(year)+sumOfDigits(month)+sumOfDigits(day);
     var rem=Math.floor(sum%luckyNum);
-    console.log("rem: "+rem);
+    if(rem==0){
+        outputref.innerText="Yes Buddy, Your birthday is lucky!";
+    }
+    else{
+        outputref.innerText="Oops! Your birthdate missed being lucky by "+rem+" days!";
+    }
+
 }
 
 function sumOfDigits(num){
