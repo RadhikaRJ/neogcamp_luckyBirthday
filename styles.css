@@ -29,7 +29,7 @@ body {
 .divR,
 .divL {
     box-sizing: border-box;
-    padding: 1px;
+    padding: 1% 2%;
 
 }
 
@@ -44,7 +44,7 @@ body {
     background-image: url("images/cards.svg");
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 1% 1%;
+    padding: 1% 6%;
     width: 100%;
 
 }
