@@ -9,7 +9,7 @@
 
 body {
     background-color: var(--primary-color);
-
+    color:var(--text-color);
 }
 
 .main-container {
@@ -100,4 +100,31 @@ p,
 
 #result {
     outline: none;
+}
+.footer {
+    background-color: var(--primary-color);
+   
+    text-align: center;
+    color: var(--text-color);
+    border-top-right-radius: 1rem;
+}
+
+.footer .link {
+    color: var(--heading-color);
+}
+
+.footer .footer-header {
+    font-weight: bold;
+    font-size: large;
+}
+
+.footer ul {
+    padding-inline-start: 0px;
+}
+.list-non-bullet {
+    list-style: none;
+}
+.list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
 }
