@@ -8,14 +8,16 @@ btnref.addEventListener("click",clickHandler);
 function clickHandler(){
     var inputDate = document.getElementById("dateip").value;
     var luckyNum=luckyNumref.value;
+
     var [year,month,day]=inputDate.toString().split('-');
+
     year=Number(year);
     month=Number(month);
     day=Number(day);
-    console.log("inputDate: "+inputDate+"\nluckyNum: "+luckyNum+"\nyear: "+year+" month: "+month+" day: "+day);
-    var sum=sumOfDigits(year)+sumOfDigits(month)+sumOfDigits(day);
-    console.log("sum: "+sum);
 
+    var sum=sumOfDigits(year)+sumOfDigits(month)+sumOfDigits(day);
+    var rem=Math.floor(sum%luckyNum);
+    console.log("rem: "+rem);
 }
 
 function sumOfDigits(num){
