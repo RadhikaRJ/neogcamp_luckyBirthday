@@ -1,42 +1,31 @@
+btnref=document.querySelector("#result");
+outputref=document.querySelector("#output");
+var luckyNumref =document.querySelector("#luckynum");
 
-var outputref = document.querySelector("#output");
-var btnref = document.querySelector("#result");
-var luckyref = document.querySelector("#luckynum");
+btnref.addEventListener("click",clickHandler);
 
-btnref.addEventListener("click",clickEventHandler);
 
-function clickEventHandler(){
-    var dateip=document.getElementById("dateip").value;
-    var luckynum = luckyref.value;
-    var luckyresult = isLucky(dateip,luckynum);
-    if(luckyresult==true){
-        outputref.innerText="Yes, Your Birthdate is Lucky!!";
-    }
-    else{
-        outputref.innerText="Oops!, Your Birthdate is not lucky!!";
-    }
-    
+function clickHandler(){
+    var inputDate = document.getElementById("dateip").value;
+    var luckyNum=luckyNumref.value;
+    var [year,month,day]=inputDate.toString().split('-');
+    year=Number(year);
+    month=Number(month);
+    day=Number(day);
+    console.log("inputDate: "+inputDate+"\nluckyNum: "+luckyNum+"\nyear: "+year+" month: "+month+" day: "+day);
+    var sum=sumOfDigits(year)+sumOfDigits(month)+sumOfDigits(day);
+    console.log("sum: "+sum);
+
 }
 
-function isLucky(date, num){
-    var[year, month,day]=date.toString().split('-');
+function sumOfDigits(num){
+   var sum=0;
     
-    var sumofdigits=calculateSumOfDigits(year) + calculateSumOfDigits(month) + calculateSumOfDigits(day);
-    console.log("Sum of all digits is: "+sumofdigits);
-    if(sumofdigits % Number(num)==0){
-        return true;
-    }
-    else return false;
-}
-
-function calculateSumOfDigits(num){
-    var sum=0;
-    var n1=Number(num);
-    while(n1>0){
-        var digit=num % 10;
-        num=num/10;
-        sum=sum+digit;
+    while(num!= 0){
+        var rem=num%10;
+        sum=sum+rem;
+        num=Math.floor(num/10);
     }
     return sum;
-    
+
 }
