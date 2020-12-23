@@ -1,19 +1,19 @@
+:root {
+    --primary-color: #E6D5EB;
+    --secondary-color: white;
+    --heading-color: #701691;
+    --text-color: #9555af;
+    --btn-primary-color: #B482C4;
 
-:root{
-    --primary-color:#E6D5EB;
-    --secondary-color:white;
-    --heading-color:#9555af;
-    --text-color:#6c0e8f;
-    --btn-primary-color:#B482C4;
-   
 }
+
 body {
     background-color: var(--primary-color);
 
 }
 
 .main-container {
-    background-color:var( --secondary-color);
+    background-color: var(--secondary-color);
     align-items: center;
     padding: 1% 10%;
 }
@@ -35,7 +35,7 @@ body {
 
 .divL {
     align-items: left;
-    background-color: var( --secondary-color);
+    background-color: var(--secondary-color);
     padding: 0% 15%;
 
 }
@@ -47,25 +47,22 @@ body {
     padding: 1% 1%;
     width: 100%;
 
-
-
-
 }
 
 h1 {
     letter-spacing: 2px;
-
+    text-transform: uppercase;
     text-shadow: 1px 1px 0 #FFFFFF, 2px 2px 0 #000000;
     color: var(--heading-color);
     align-items: center;
     padding: 0% 15%;
 
-
-
 }
 
 .container h3,
-h2,p,#output {
+h2,
+p,
+#output {
     letter-spacing: 1px;
     color: var(--text-color);
 
@@ -80,7 +77,7 @@ h2,p,#output {
     ;
     margin: 2px 0;
     padding: 0.5em 1em;
-    color: var( --secondary-color);
+    color: var(--secondary-color);
     background-color: var(--btn-primary-color);
 }
 
@@ -92,7 +89,7 @@ h2,p,#output {
 #result:hover {
     color: var(--heading-color);
     border-color: currentColor;
-    background-color: var( --secondary-color);
+    background-color: var(--secondary-color);
 }
 
 #result:focus {
