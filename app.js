@@ -22,9 +22,9 @@ function clickHandler() {
         var sum = sumOfDigits(year) + sumOfDigits(month) + sumOfDigits(day);
         var rem = Math.floor(sum % luckyNum);
         if (rem == 0) {
-            outputref.innerText = "Yes Buddy, Your birthday is lucky!";
+            outputref.innerText = "Yes Buddy, Your birthday is lucky!\nMay Lady Luck be with you!";
         } else {
-            outputref.innerText = "Oops! Your birthdate missed being lucky by " + rem + " days!";
+            outputref.innerText = "Oops! You missed being lucky by " + rem + " days!";
         }
     }
 
