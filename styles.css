@@ -1,10 +1,19 @@
+
+:root{
+    --primary-color:#E6D5EB;
+    --secondary-color:white;
+    --heading-color:#9555af;
+    --text-color:#6c0e8f;
+    --btn-primary-color:#B482C4;
+   
+}
 body {
-    background-color: #E6D5EB;
+    background-color: var(--primary-color);
 
 }
 
 .main-container {
-    background-color: white;
+    background-color:var( --secondary-color);
     align-items: center;
     padding: 1% 10%;
 }
@@ -13,7 +22,7 @@ body {
     display: flex;
     padding: 5% 5%;
     background: transparent;
-    background-color: #E6D5EB;
+    background-color: var(--primary-color);
 
 }
 
@@ -26,7 +35,7 @@ body {
 
 .divL {
     align-items: left;
-    background-color: white;
+    background-color: var( --secondary-color);
     padding: 0% 15%;
 
 }
@@ -47,7 +56,7 @@ h1 {
     letter-spacing: 2px;
 
     text-shadow: 1px 1px 0 #FFFFFF, 2px 2px 0 #000000;
-    color: #9555af;
+    color: var(--heading-color);
     align-items: center;
     padding: 0% 15%;
 
@@ -56,12 +65,12 @@ h1 {
 }
 
 .container h3,
-h2 {
+h2,p,#output {
     letter-spacing: 1px;
-    color: #834899;
+    color: var(--text-color);
 
     text-shadow: -1px -1px 1px #FFFFFF, 1px 1px 1px #000000;
-    opacity: 0.5;
+    /* opacity: 0.5; */
 }
 
 #result {
@@ -71,8 +80,8 @@ h2 {
     ;
     margin: 2px 0;
     padding: 0.5em 1em;
-    color: #ffffff;
-    background-color: #B482C4;
+    color: var( --secondary-color);
+    background-color: var(--btn-primary-color);
 }
 
 #result:active {
@@ -81,9 +90,9 @@ h2 {
 }
 
 #result:hover {
-    color: #9555af;
+    color: var(--heading-color);
     border-color: currentColor;
-    background-color: white;
+    background-color: var( --secondary-color);
 }
 
 #result:focus {
