@@ -35,6 +35,11 @@ body {
     background-color: var(--secondary-color);
     padding: 2% 2% 2% 10%;
     width:60%;
+
+}
+
+.divL #luckynum{
+    width:inherit;
 }
 
 
