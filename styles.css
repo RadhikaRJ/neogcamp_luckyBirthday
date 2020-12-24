@@ -44,6 +44,11 @@ body {
     width:inherit;
 }
 
+#op-image img{
+    height:50%;
+    width:50%;
+}
+
 
 
 h1 {
