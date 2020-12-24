@@ -26,6 +26,7 @@ function clickHandler() {
         } else {
             if(rem==1){
                 outputref.innerText = "Oops! You missed being lucky by just " + rem + " day!";
+                
             }
             else{
             outputref.innerText = "Oops! You missed being lucky by " + rem + " days. May the lady bug be with you!";
