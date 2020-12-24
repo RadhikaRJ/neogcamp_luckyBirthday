@@ -41,7 +41,8 @@ body {
 
 
 .divL #luckynum{
-    width:20px;
+    width:50px;
+    border:1px solid var(--primary-color);
 }
 
 #op-image img{
