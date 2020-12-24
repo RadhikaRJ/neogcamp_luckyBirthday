@@ -107,6 +107,7 @@ p,
 
 .footer .link {
     color: var(--heading-color);
+    text-decoration:none;
 }
 
 .footer .footer-header {
@@ -123,4 +124,15 @@ p,
 .list-item-inline {
     display: inline;
     padding: 0rem 0.5rem;
+}
+.socicon img{
+    padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.socicon img:hover{
+    opacity:0.7;
 }
