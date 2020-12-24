@@ -98,7 +98,7 @@ p,
     outline: none;
 }
 .footer {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
    padding: 1% 1% 1% 1%;
     text-align: center;
     color: var(--text-color);
@@ -126,7 +126,7 @@ p,
     padding: 0rem 0.5rem;
 }
 .socicon img{
-    padding: 20px;
+    padding: 2px;
   font-size: 30px;
   width: 30px;
   text-align: center;
