@@ -10,7 +10,7 @@
 body {
     display:flex;
     background-color: var(--primary-color);
-    color:var(--text-color);
+   
 }
 
 .main-container {
@@ -31,12 +31,14 @@ body {
 
 
 .divL {
+    color:var(--text-color);
     align-items: left;
     background-color: var(--secondary-color);
     padding: 2% 2% 2% 10%;
     width:60%;
 
 }
+
 
 .divL #luckynum{
     width:inherit;
@@ -126,7 +128,7 @@ p,
     padding: 0rem 0.5rem;
 }
 .socicon img{
-    padding: 2px;
+ padding: 2px;
   font-size: 30px;
   width: 30px;
   text-align: center;
@@ -136,3 +138,29 @@ p,
 .socicon img:hover{
     opacity:0.7;
 }
+
+/* The alert message box */
+.alert {
+    padding: 2px;
+    background-color: #d9edf7; 
+    color: #31708f;
+    margin-bottom: 10px;
+    border-color: #bce8f1;
+  }
+  
+  /* The close button */
+  .closebtn {
+    margin-left: 15px;
+    color: #31708f;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* When moving the mouse over the close button */
+  .closebtn:hover {
+    color: white;
+  }
